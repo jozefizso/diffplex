@@ -27,6 +27,7 @@ For use of the ISidebySideDiffer interface see:
 
 ## IDiffer Interface 
  
+ ```cs
     /// <summary>
     /// Provides methods for generate differences between texts
     /// </summary>
@@ -70,10 +71,11 @@ For use of the ISidebySideDiffer interface see:
         /// <returns>A DiffResult object which details the differences</returns>
         DiffResult CreateCustomDiffs(string oldText, string newText, bool ignoreWhiteSpace, Func<string, string[]> chunker);
     }
-
+```
 
 ## ISidebySideDiffer Interface
 
+```cs
     /// <summary>
     /// Provides methods that generate differences between texts for displaying in a side by side view.
     /// </summary>
@@ -87,7 +89,7 @@ For use of the ISidebySideDiffer interface see:
         /// <returns>The side by side diff model</returns>
         SideBySideDiffModel BuildDiffModel(string oldText, string newText);
     }
-
+```
 
 
 ## Sample Website
